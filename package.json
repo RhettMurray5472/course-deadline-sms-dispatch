@@ -1,0 +1,15 @@
+{
+  "name": "course-deadline-sms-dispatch",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/course_dispatch.ts",
+    "demo": "tsx scripts/preview_campaign.ts",
+    "test": "tsx --test test/course_dispatch.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {"zod": "^3.24.2"},
+  "devDependencies": {"@types/node": "^22.13.0", "tsx": "^4.19.3", "typescript": "^5.7.3"},
+  "engines": {"node": ">=20"}
+}

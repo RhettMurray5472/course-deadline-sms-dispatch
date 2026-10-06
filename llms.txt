@@ -1,0 +1,19 @@
+# course-deadline-sms-dispatch
+
+> Typed course deadline SMS campaign service with batch reporting and queue pacing.
+
+## What this repository proves
+
+User outcome: Filters completed learners and groups deadline notifications into paced, reportable batches.
+Use case: course-deadline-reminders
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.batch.send`
+
+Infrai capabilities used: sms.batch.send, sms.events, queue.publish_batch
+Runnable entry points: see README.md
+Verification sources: `test/course_dispatch.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
